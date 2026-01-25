@@ -27,6 +27,23 @@ body {
     overflow-x: hidden;
 }
 
+/* Skip to content link */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    padding: 0.5rem 1rem;
+    background: var(--color-slate);
+    color: white;
+    z-index: 200;
+    transition: top 0.3s ease;
+}
+
+.skip-link:focus {
+    top: 0;
+    color: white;
+}
+
 /* Header & Navigation */
 header {
     background: rgba(26, 35, 50, 0.97);
