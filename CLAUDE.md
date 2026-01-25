@@ -8,7 +8,7 @@ Aero und Treuhand is a static website for a Swiss company offering balloon ride 
 
 ## Development
 
-This is a pure static HTML/CSS site with no build system, package manager, or dependencies.
+This is a pure static HTML/CSS/JS site with no build system, package manager, or dependencies.
 
 **To run locally:**
 ```bash
@@ -20,18 +20,21 @@ Then open http://localhost:8000 in a browser.
 
 ## Architecture
 
-**Technology stack:** HTML5, CSS3, minimal vanilla JavaScript, Google Fonts
+**Technology stack:** HTML5, CSS3, vanilla JavaScript, Google Fonts
 
 **Structure:**
-- `index.html` - Homepage (currently "Coming Soon" placeholder)
+- `index.html` - Homepage
 - `css/style.css` - Single centralized stylesheet with CSS custom properties
+- `js/main.js` - Shared JavaScript (header scroll effect)
 - `pages/` - Dedicated pages (ballonfahrten, treuhand, kontakt, impressum, datenschutz)
 
 **Key patterns:**
-- All pages share the same header/footer structure and include identical scroll-effect JavaScript
+- All pages share the same header/footer structure
 - CSS uses custom properties for theming (defined in `:root`)
-- Responsive breakpoint at 768px
-- Paths from pages use `../` to reference root assets (e.g., `../css/style.css`)
+- Responsive breakpoints at 768px and 480px
+- Paths from pages use `../` to reference root assets (e.g., `../css/style.css`, `../js/main.js`)
+- All pages include skip-to-content link for accessibility
+- CSS respects `prefers-reduced-motion` for users who prefer no animations
 
 **CSS color variables:**
 ```css
@@ -47,6 +50,6 @@ Then open http://localhost:8000 in a browser.
 
 ## Current State
 
-- Homepage (`index.html`) is a placeholder
 - Contact information uses placeholder values (`+41 xx xxx xx xx`, `Musterstrasse 123`)
 - No `images/` directory exists yet; add images there when needed
+- No favicon configured yet
