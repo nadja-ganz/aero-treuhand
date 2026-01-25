@@ -16,6 +16,7 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
@@ -233,6 +234,7 @@ a:hover {
 .page-ballonfahrten {
     background: white;
     position: relative;
+    overflow: hidden;
 }
 
 .page-ballonfahrten::before {
@@ -249,6 +251,7 @@ a:hover {
 .page-treuhand {
     background: var(--color-sky);
     position: relative;
+    overflow: hidden;
 }
 
 .page-treuhand::before {
