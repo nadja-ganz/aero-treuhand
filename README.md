@@ -1,24 +1,92 @@
 # Aero und Treuhand Website
 
-A simple, single-page website for Aero und Treuhand, featuring three main sections: Home, Ballonfahrten (Balloon Rides), and Treuhand (Fiduciary Services).
+A modern, clean website for Aero und Treuhand, featuring balloon ride services and fiduciary services with a professional multi-page structure.
 
-## Features
+## Design Features
 
-- **Clean, responsive design**: Works on desktop and mobile devices
-- **Fixed navigation bar**: Easy access to all sections
-- **Three main sections**:
-    - Home: Welcome page with company introduction
-    - Ballonfahrten: Information about balloon ride services
-    - Treuhand: Details about fiduciary services
-- **Smooth scrolling**: Navigation links scroll smoothly to each section
+- **Elegant Typography**: Uses Cormorant Garamond for headings and Work Sans for body text
+- **Sophisticated Color Palette**: Sky blue, cloud white, and gold accents evoke both aviation and trust
+- **Subtle Animations**: Smooth fade-ins, floating elements, and hover effects
+- **Modern Aesthetics**: Clean layouts with generous whitespace and refined details
+- **Responsive Design**: Adapts beautifully to all screen sizes
+- **Glassmorphism Header**: Semi-transparent navigation with backdrop blur
+- **Enhanced Readability**: Larger font sizes optimized for all age groups, including older visitors
 
-## File Structure
+## Project Structure
 
 ```
-.
-├── index.html          # Main HTML file with embedded CSS
-└── README.md          # This file
+aero-und-treuhand/
+├── index.html              # Homepage
+├── css/
+│   └── style.css          # Main stylesheet (all CSS)
+├── pages/
+│   ├── ballonfahrten.html # Balloon rides page
+│   ├── treuhand.html      # Fiduciary services page
+│   ├── kontakt.html       # Contact page
+│   ├── impressum.html     # Imprint/Legal information
+│   └── datenschutz.html   # Privacy policy
+└── README.md              # This file
 ```
+
+## Pages Overview
+
+- **index.html**: Homepage with introduction and call-to-action buttons
+- **ballonfahrten.html**: Detailed information about balloon rides, safety, requirements, and insurance
+- **treuhand.html**: Comprehensive overview of fiduciary services and business consulting
+- **kontakt.html**: Contact information with separate details for balloon rides and fiduciary services
+- **impressum.html**: Legal information and disclaimers
+- **datenschutz.html**: Complete privacy policy compliant with Swiss data protection law
+
+## CSS Architecture
+
+All styles are centralized in `css/style.css` including:
+- CSS custom properties for consistent theming
+- Responsive breakpoints for mobile optimization
+- Animation keyframes
+- Component-specific styles
+- Page-specific background classes
+
+## Customization
+
+### Colors
+Edit the CSS variables in `css/style.css`:
+```css
+:root {
+    --color-sky: #E8F4F8;
+    --color-cloud: #F8FAFB;
+    --color-slate: #1A2332;
+    --color-gold: #B8935C;
+    /* ... */
+}
+```
+
+### Content
+- Edit individual HTML files in their respective locations
+- Navigation is consistent across all pages
+- Footer links are relative and work from all pages
+
+### Adding Images
+Place images in a new `images/` directory and reference them as:
+- From root: `images/your-image.jpg`
+- From pages: `../images/your-image.jpg`
+
+## Browser Compatibility
+
+Works in all modern browsers:
+- Chrome/Edge (latest)
+- Firefox (latest)
+- Safari (latest)
+
+## Technologies Used
+
+- HTML5
+- CSS3 with CSS Variables
+- Vanilla JavaScript (minimal, for header scroll effect)
+- Google Fonts (Cormorant Garamond, Work Sans)
+
+## License
+
+All rights reserved © 2026 Aero und Treuhand
 
 ## How to Use
 

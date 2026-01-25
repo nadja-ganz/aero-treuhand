@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impressum - Aero und Treuhand</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Work+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1><a href="../index.html">Aero und Treuhand</a></h1>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="ballonfahrten.html">Ballonfahrten</a></li>
+                <li><a href="treuhand.html">Treuhand</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="page-impressum">
+        <h2>Impressum</h2>
+        
+        <h3>Verantwortlich für den Inhalt</h3>
+        <p>
+            Aero und Treuhand<br>
+            Musterstrasse 123<br>
+            8400 Winterthur<br>
+            Schweiz
+        </p>
+        <p>
+            E-Mail: <a href="mailto:info@aero-treuhand.ch">info@aero-treuhand.ch</a><br>
+            Telefon: <a href="tel:+41522020300">+41 52 202 03 00</a>
+        </p>
+        
+        <h3>Haftungsausschluss</h3>
+        <p>Der Autor übernimmt keine Gewähr für die Richtigkeit, Genauigkeit, Aktualität, Zuverlässigkeit und Vollständigkeit der Informationen auf dieser Website.</p>
+        <p>Haftungsansprüche gegen den Autor wegen Schäden materieller oder immaterieller Art, die aus dem Zugriff oder der Nutzung bzw. Nichtnutzung der veröffentlichten Informationen, durch Missbrauch der Verbindung oder durch technische Störungen entstanden sind, werden ausgeschlossen.</p>
+        
+        <h3>Urheberrecht</h3>
+        <p>Die Urheber- und alle anderen Rechte an Inhalten, Bildern, Fotos oder anderen Dateien auf der Website gehören ausschliesslich Aero und Treuhand oder den speziell genannten Rechtsinhabern. Für die Reproduktion jeglicher Elemente ist die schriftliche Zustimmung der Urheberrechtsträger im Voraus einzuholen.</p>
+        
+        <h3>Links</h3>
+        <p>Diese Website enthält Links zu Websites von Dritten, auf deren Inhalte und technische Ausgestaltung Aero und Treuhand keinen Einfluss hat und entsprechend keine Gewähr übernehmen kann. Das Herstellen von Verbindungen zu den verlinkten Websites erfolgt auf eigenes Risiko.</p>
+        
+        <h3>Keine Gewährleistung</h3>
+        <p>Aero und Treuhand übernimmt keine Verantwortung und gibt keine Garantie dafür ab,</p>
+        <ul>
+            <li>dass die Funktionen auf der Website nicht unterbrochen werden oder fehlerlos sind,</li>
+            <li>dass Fehler behoben werden, oder</li>
+            <li>dass die Website oder dass der jeweilige Server frei von Viren oder schädlichen Bestandteilen ist.</li>
+        </ul>
+        
+        <h3>Datenschutzerklärung</h3>
+        <p>Die Datenschutzerklärung ist <a href="datenschutz.html">hier</a> abrufbar.</p>
+    </main>
+
+    <footer>
+        <p style="color: var(--color-gold)">&copy; 2026 Aero und Treuhand. Alle Rechte vorbehalten.</p>
+        <p style="margin-top: 1rem; font-size: 0.85rem;">
+            <a href="pages/kontakt.html">Kontakt</a>
+            <a href="pages/impressum.html">Impressum</a> |
+            <a href="pages/datenschutz.html">Datenschutz</a>
+        </p>
+    </footer>
+    
+    <script>
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>
