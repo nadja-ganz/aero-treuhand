@@ -1,0 +1,26 @@
+# Netlify configuration
+
+# Production context: all deploys from the main branch
+[context.production]
+  # No special headers for production - allow indexing
+
+# Deploy Preview context: all deploy previews
+[context.deploy-preview]
+  [[context.deploy-preview.headers]]
+    for = "/*"
+    [context.deploy-preview.headers.values]
+      X-Robots-Tag = "noindex, nofollow"
+
+# Branch deploy context: all branch deploys (including *.netlify.app)
+[context.branch-deploy]
+  [[context.branch-deploy.headers]]
+    for = "/*"
+    [context.branch-deploy.headers.values]
+      X-Robots-Tag = "noindex, nofollow"
+
+# Default headers for the default Netlify subdomain
+[[headers]]
+  for = "/*"
+  [headers.values]
+    # Block indexing on *.netlify.app domains via _redirects or domain check
+    # The X-Robots-Tag below only applies if no custom domain is set
