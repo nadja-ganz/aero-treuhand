@@ -24,6 +24,7 @@ body {
     color: var(--color-text);
     background: var(--color-cloud);
     font-size: 18px;
+    overflow-x: hidden;
 }
 
 /* Header & Navigation */
@@ -378,6 +379,7 @@ footer .footer-links a {
         gap: 1rem;
         flex-wrap: wrap;
         justify-content: center;
+        margin: 0;
     }
 
     nav a {
@@ -456,5 +458,31 @@ footer .footer-links a {
     footer p {
         padding: 0 1rem;
         font-size: 0.85rem;
+    }
+}
+
+/* Focus styles for keyboard navigation */
+a:focus-visible,
+.btn:focus-visible {
+    outline: 2px solid var(--color-gold);
+    outline-offset: 2px;
+}
+
+nav a:focus-visible {
+    outline-color: white;
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+
+    html {
+        scroll-behavior: auto;
     }
 }
