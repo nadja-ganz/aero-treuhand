@@ -20,7 +20,7 @@ html {
 }
 
 body {
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     line-height: 1.8;
     color: var(--color-text);
     background: var(--color-cloud);
@@ -74,7 +74,7 @@ nav {
 }
 
 nav h1 {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 1.8rem;
     font-weight: 300;
     letter-spacing: 1px;
@@ -144,7 +144,7 @@ main {
 
 /* Typography */
 h2 {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Montserrat', sans-serif;
     color: var(--color-slate);
     margin-bottom: 2.5rem;
     font-size: 3.5rem;
@@ -165,7 +165,7 @@ h2::after {
 }
 
 h3 {
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: var(--color-slate);
     margin: 2.5rem 0 1.2rem 0;
     font-size: 1.5rem;
