@@ -82,9 +82,31 @@ nav h1 {
     animation: fadeInDown 0.8s ease forwards;
 }
 
+nav h1 {
+    display: flex;
+    align-items: center;
+    margin: -1.5rem 0;
+}
+
+header.scrolled nav h1 {
+    margin: -1rem 0;
+}
+
 nav h1 a {
     color: white;
     text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+nav h1 a .logo {
+    height: 6rem;
+    width: auto;
+    transition: all 0.3s ease;
+}
+
+header.scrolled nav h1 a .logo {
+    height: 4rem;
 }
 
 nav ul {
