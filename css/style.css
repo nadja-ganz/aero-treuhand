@@ -622,11 +622,15 @@ footer .footer-links a {
 
     .team-photos {
         flex-direction: row;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
     }
 
     .team-photos img {
-        flex: 1;
+        flex: 0 0 75%;
         height: 180px;
+        scroll-snap-align: center;
     }
 }
 
