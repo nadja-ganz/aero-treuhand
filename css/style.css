@@ -95,6 +95,24 @@ nav h1 a .logo {
     width: auto;
 }
 
+.logo-small {
+    height: 3rem;
+    width: auto;
+    display: block;
+    margin: 0 0 1rem 0;
+}
+
+.contact-card {
+    background: var(--color-sky);
+    padding: 1.5rem 2rem;
+    border-radius: 8px;
+    margin: 2rem 0;
+}
+
+.contact-card p {
+    margin-bottom: 0;
+}
+
 nav ul {
     list-style: none;
     display: flex;
