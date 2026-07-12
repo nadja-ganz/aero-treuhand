@@ -18,3 +18,4 @@
 
 ## Quality
 - [ ] Check for accessibility
+- [ ] Check text color contrasts (especially gold on dark blue in footer)
