@@ -45,11 +45,9 @@ Then open http://localhost:8000 in a browser.
 ```
 
 **Typography:**
-- Headings: Cormorant Garamond (serif)
-- Body: Work Sans (sans-serif)
+- Font: Montserrat (weights: 300, 400, 500, 600)
 
 ## Current State
 
 - Contact information uses placeholder values (`+41 xx xxx xx xx`, `Musterstrasse 123`)
 - No `images/` directory exists yet; add images there when needed
-- No favicon configured yet
