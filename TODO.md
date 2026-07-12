@@ -11,6 +11,7 @@
 ## Content & Media
 - [ ] Add images to Tipps and Wissenswertes
 - [ ] Check if images are too big (optimize if needed)
+- [ ] Create QR code for the website
 
 ## Infrastructure
 - [ ] Plan backup hosting solution when Netlify credits are depleted
