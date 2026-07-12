@@ -12,5 +12,8 @@
 - [ ] Add images to Tipps and Wissenswertes
 - [ ] Check if images are too big (optimize if needed)
 
+## Infrastructure
+- [ ] Plan backup hosting solution when Netlify credits are depleted
+
 ## Quality
 - [ ] Check for accessibility
