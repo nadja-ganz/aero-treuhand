@@ -1,9 +1,8 @@
 # Netlify configuration
 
-# Build: copy only public files to dist folder
+# Publish only the public folder
 [build]
-  command = "mkdir -p dist && cp -r index.html css js pages assets favicon.svg robots.txt sitemap.xml dist/"
-  publish = "dist"
+  publish = "public"
 
 # Production context: all deploys from the main branch
 [context.production]
