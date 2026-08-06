@@ -47,6 +47,12 @@ Then open http://localhost:8000 in a browser.
 **Typography:**
 - Font: Montserrat (weights: 300, 400, 500, 600)
 
+## Workflow Rules
+
+- **Never push without asking** - Always confirm with the user before running `git push`
+- **Never merge to master without asking** - Merging triggers Netlify deployment
+- Website files are in `public/` folder, internal files stay in root
+
 ## Current State
 
 - Contact information uses placeholder values (`+41 xx xxx xx xx`, `Musterstrasse 123`)
