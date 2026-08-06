@@ -1,9 +1,9 @@
 # Netlify configuration
 
-# Build: delete internal files before deployment
+# Build: copy only public files to dist folder
 [build]
-  command = "rm -f TODO.md README.md CLAUDE.md .gitignore .netlifyignore"
-  publish = "."
+  command = "mkdir -p dist && cp -r index.html css js pages assets favicon.svg robots.txt sitemap.xml dist/"
+  publish = "dist"
 
 # Production context: all deploys from the main branch
 [context.production]
