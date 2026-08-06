@@ -1,17 +1,5 @@
 # Netlify configuration
-
-# Block access to internal files
-[[redirects]]
-  from = "/*.md"
-  to = "/404"
-  status = 404
-  force = true
-
-[[redirects]]
-  from = "/.gitignore"
-  to = "/404"
-  status = 404
-  force = true
+# Internal files blocked via .netlifyignore (not deployed)
 
 # Production context: all deploys from the main branch
 [context.production]
