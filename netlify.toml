@@ -1,5 +1,9 @@
 # Netlify configuration
-# Internal files blocked via .netlifyignore (not deployed)
+
+# Build: delete internal files before deployment
+[build]
+  command = "rm -f TODO.md README.md CLAUDE.md .gitignore .netlifyignore"
+  publish = "."
 
 # Production context: all deploys from the main branch
 [context.production]
