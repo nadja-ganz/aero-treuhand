@@ -5,11 +5,13 @@
   from = "/*.md"
   to = "/404"
   status = 404
+  force = true
 
 [[redirects]]
   from = "/.gitignore"
   to = "/404"
   status = 404
+  force = true
 
 # Production context: all deploys from the main branch
 [context.production]
