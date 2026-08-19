@@ -3,6 +3,14 @@
 ## SEO & Indexing
 - [x] Create sitemap.xml
 - [x] Create robots.txt
+- [ ] Request re-indexing in Google Search Console (for favicon to appear)
+- [ ] Add "Sattel-Hochstuckli" to homepage title for SEO
+- [ ] Create Google Business Profile (local SEO boost)
+
+## Favicon & Images
+- [x] Fix broken image references in kontakt.html (logo_black.png → .webp)
+- [x] Add dark mode favicon support (light/dark with media queries)
+- [x] Make favicons square for Google Search compatibility
 
 ## Development
 - [x] Fix git branching strategy
